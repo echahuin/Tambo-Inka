@@ -1,0 +1,52 @@
+
+.description{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contImgDescription{
+    position: relative;
+    height: 25rem;
+    width: 30rem;
+}
+
+.descriptionText{
+    position: relative;
+    height: 25rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem;
+}
+.descriptionText h1 {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-extra-bold);
+    margin-bottom: 1rem;
+}
+.descriptionText p {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight);
+    margin-bottom: 1rem;
+}
+.boxBackgroundOne{
+    position: absolute;
+    top: 55%;
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--background-primary-color-1);
+}
+.boxBackgroundTwo{
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    height: 20rem;
+    width: 20rem;
+    background-color: var(--background-primary-color-1);
+}

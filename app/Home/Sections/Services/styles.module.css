@@ -1,0 +1,16 @@
+.contCardServices{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.CardService {
+    display: flex;
+}
+.title {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-title-3);
+    font-weight: var(--font-weight-extra-bold) !important;
+    margin: 1.5rem;
+}

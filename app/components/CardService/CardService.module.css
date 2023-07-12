@@ -1,0 +1,29 @@
+.contImgService{
+    box-shadow: var(--cardShadowSmall);
+    position: relative;
+    height: 13rem;
+    width: 20rem;
+    margin: .5rem;
+}
+.textService {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 13rem;
+    width: 20rem;
+}
+
+.textService h2 {
+    font-family: var(--primary-font);
+    color: var(--white-color);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    opacity: 1;
+    margin: 0;
+    cursor: default;
+}
+.contImgService:hover > .imgService {
+    filter: brightness(0.4);
+}

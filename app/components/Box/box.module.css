@@ -1,0 +1,24 @@
+.box {
+    box-shadow: var(--cardShadowSmall);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 10rem;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    text-align: center;
+    padding: .5rem;
+}
+.title {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-extra-bold) !important;
+    margin: .5rem;
+}
+.paragraph{
+    font-family: var(--primary-font);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    margin: .3rem;
+}

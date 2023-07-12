@@ -1,0 +1,25 @@
+.scroolBody {
+    position: relative;
+  }
+  
+  .scroolContent {
+    display: flex;
+	flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  
+  .slider{
+    min-width: 100%;
+	transition: .3s ease all;
+	z-index: 10;
+	/* max-height: 500px; */
+	position: relative;
+
+}
+.img {
+    width: 100%;
+    vertical-align: top;
+    height: 100vh!important;
+    width: 100%;
+}
+  

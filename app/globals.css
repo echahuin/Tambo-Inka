@@ -1,27 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.custom-variables {
+  --primary-color: #FFB90D;
+  --second-color: #FFD700;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  /* backgrounds */
+  --background-primary-color: #ff88004d;
+  --background-primary-color-1: #ff88001a;
+  /* Fonts */
+  --primary-font: "sohne-var","Helvetica Neue","Arial",sans-serif;
+  --font-size-medium: 1rem;
+  --font-size-small: .8rem;
+  --font-size-large: 1.5rem;
+  --font-size-title: 2rem;
+  --font-size-title-2: 2.5rem;
+  --font-size-title-3: 3.5rem;
+  --font-weight: 400;
+  --font-weight-bold: 600;
+  --font-weight-extra-bold: 800;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  --cardShadowSmall: 0 6px 12px -2px rgba(50,50,93,0.25),0 3px 7px -3px rgba(0,0,0,0.3);
 }

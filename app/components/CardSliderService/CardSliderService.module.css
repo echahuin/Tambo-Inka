@@ -1,0 +1,56 @@
+.ContentCardSlider {
+    position: relative;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    height: 20rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yellowDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background: var(--second-color);
+}
+.backgroundText{
+    width: 99.5%;
+    height: 99.5%;
+    background: var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.contentText{
+    font-family: var(--primary-font);
+    text-align: center;
+    padding: 5rem;
+}
+.contentText h1{
+    font-size: var(--font-size-title);
+    /* font-family: var(--font-primary); */
+}
+.contentText p{
+    font-size: var(--font-size-medium);
+    /* font-family: var(--font-primary); */
+}
+.boxStyle1{
+    position: absolute;
+    height: 15rem;
+    width: 20rem;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    left: 0;
+}
+.boxStyle2{
+    position: absolute;
+    height: 15rem;
+    width:20rem;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    right: 0;
+}
