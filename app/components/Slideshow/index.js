@@ -27,9 +27,9 @@ function Slideshow() {
 	  {/* {images.map((img, index) => {
 		  return ( */}
 			  <div className={classes.contImg}>
-				<Image ref={animationFade}  src={'/images/food.jpg'} alt={`ImgSlider`} fill={true} />
-				<Image src={'/images/dessert.jpg'} alt={`ImgSlider`} fill={true} />
-				<Image  src={'/images/hamburger.jpg'} alt={`ImgSlider`} fill={true} />
+				{/* <Image ref={animationFade}  src={'/images/food.jpg'} alt={`ImgSlider`} fill={true} style={{objectFit: 'cover'}}/>
+				<Image src={'/images/dessert.jpg'} alt={`ImgSlider`} fill={true} style={{objectFit: 'cover'}}/> */}
+				<Image  src={'/images/hamburger.jpg'} alt={`ImgSlider`} fill={true} style={{objectFit: 'cover'}}/>
 			  </div>
 		{/* // 	)
 		// })} */}

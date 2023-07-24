@@ -1,32 +1,3 @@
-.contentServiceDetail{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: -1rem;
-}
-.text{
-    left: -1rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: -8rem;
-    z-index: -1;
-}
-.contButtons{
-    position: absolute;
-    display: flex;
-    align-items: center;
-}
 .buttonAnterior {
     position: absolute;
     top: -168px;
@@ -44,7 +15,6 @@
     font-family: var(--primary-font);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-bold);
-    cursor: pointer;
 }
 
 .buttonSiguiente {
@@ -64,5 +34,4 @@
     font-family: var(--primary-font);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-bold);
-    cursor: pointer;
 }

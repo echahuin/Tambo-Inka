@@ -1,9 +1,12 @@
-'use-client'
+"use client";
 import React from 'react'
 import classes from './menu.module.css'
 import Image from 'next/image'
+import useDevice from '@/app/Hooks/useDevice'
 
 function Menu() {
+
+  const { isMobile } = useDevice()
   return (
     <div className={classes.menu} >
       <div>
