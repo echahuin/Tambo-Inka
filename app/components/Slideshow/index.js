@@ -4,36 +4,37 @@ import Image from 'next/image'
 import classes from './slideshow.module.css'
 
 function Slideshow() {
-	// const images=['/images/hamburger.jpg', '/images/food.jpg', '/images/dessert.jpg']
-	// const [index, setIndex] = React.useState(0)  
-	// 123 213 231
+	const images=['/images/hamburger.jpg', '/images/food.jpg', '/images/dessert.jpg']
+	const [index, setIndex] = React.useState(0)
 	const animationFade = useRef(null)
 	
 	const animationFadeIn = useCallback(() => {
-		animationFade.current
+
+			animationFade.current.classList.remove(classes.fadeIn);
+		// animationFade.current
+		// console.log(animationFade.current)
 	}, [animationFade])
-	
-	
+
 	useEffect(() => {
-		setInterval(() => {
-			console.log('entrmoas')
-			animationFadeIn();
-		}, 3000)
-	}, [animationFadeIn])
+		const intervalId = setInterval(() => {
+			const numeroAleatorio = Math.floor(Math.random() * 3);
+			setIndex(numeroAleatorio)
+			// animationFadeIn();
+			animationFade.current.classList.remove(classes.fadeIn);
+		}, 3000);
+	
+		return () => {
+		  clearInterval(intervalId); 
+		};
+	  }, [animationFadeIn]); 
 	
 
   return (
 	<>
-	  {/* {images.map((img, index) => {
-		  return ( */}
-			  <div className={classes.contImg}>
-				{/* <Image ref={animationFade}  src={'/images/food.jpg'} alt={`ImgSlider`} fill={true} style={{objectFit: 'cover'}}/>
-				<Image src={'/images/dessert.jpg'} alt={`ImgSlider`} fill={true} style={{objectFit: 'cover'}}/> */}
-				<Image  src={'/images/hamburger.jpg'} alt={`ImgSlider`} fill={true} style={{objectFit: 'cover'}}/>
-			  </div>
-		{/* // 	)
-		// })} */}
-		</>
+		<div className={classes.contImg}>
+			<Image ref={animationFade}  src={images[index]} alt={`imgSlider${index}`} fill={true} style={{objectFit: 'cover'}}/>
+		</div>
+	</>
   )
 }
 
