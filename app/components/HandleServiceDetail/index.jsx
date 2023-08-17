@@ -6,7 +6,6 @@ import classes from './styles.module.css'
 
 
 function HandleServiceDetail({indexRender, service, buttonAnterior: ButtonAnterior, buttonSiguiente: ButtonSiguiente}) {
-    console.log('this', service[indexRender].image)
     return (
         <>
             <div className={classes.contentServiceDetail}>
@@ -14,7 +13,7 @@ function HandleServiceDetail({indexRender, service, buttonAnterior: ButtonAnteri
                     <CardSliderImg srcImage={`${service[indexRender].image}`}/>
                 </div>
                 <div className={classes.text}>
-                    <CardSliderService title={`${service[indexRender].title}`} paragraph={'Menú personalizado y adaptado a las preferencias y requisitos específicos del cliente, que pueda incluir una variedad de opciones de aperitivos, entrantes, platos principales, guarniciones, postres y bebidas.'}/>
+                    <CardSliderService title={`${service[indexRender].title}`} paragraph={`${service[indexRender].paragraph}`}/>
                 </div>
                 <div className={classes.contButtons}>
                     <ButtonAnterior />

@@ -31,3 +31,48 @@
     color: #ffffff;
 }
 
+@media only screen and (max-width: 37.5rem){
+    .menu {
+        padding-left: 1.5rem;
+        width: 100%;
+    }
+    .logoMenu{
+        height: 3rem;
+        width: 5rem;
+        padding-right: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 200;
+    }
+    .isActiveLogoMenu {
+        
+    }
+    .indx{
+        color: teal;
+        height: .4rem;
+        width: 4rem;
+        background:rgb(114, 99, 99);
+    }
+    .isActiveIndx{
+        background-color: aqua;
+    }
+    .mobileMenu {
+       display:none
+    }
+    .isActive {
+        color: black;
+        position: absolute;
+        top: 50;
+        margin-top: 11rem;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80vh;
+        width: 100%;
+        background: red;
+        z-index: 100;
+    }
+}

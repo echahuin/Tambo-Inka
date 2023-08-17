@@ -14,3 +14,18 @@
     font-weight: var(--font-weight-extra-bold) !important;
     margin: 1.5rem;
 }
+.contCardServicesMb {
+    height: 70vh;
+    width: auto;
+    overflow-x: scroll;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+.CardServiceMb{
+    width: 56rem;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    background: rgba(3, 65, 236, 0.801);
+}

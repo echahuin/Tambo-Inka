@@ -17,6 +17,9 @@
   --font-weight: 400;
   --font-weight-bold: 600;
   --font-weight-extra-bold: 800;
-
   --cardShadowSmall: 0 6px 12px -2px rgba(50,50,93,0.25),0 3px 7px -3px rgba(0,0,0,0.3);
+  /* Mobile variables */
+  --font-size-title-mobile: 1.2rem;
+  --font-size-medium-mobile: .9rem;
+
 }

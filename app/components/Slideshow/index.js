@@ -9,17 +9,13 @@ function Slideshow() {
 	const animationFade = useRef(null)
 	
 	const animationFadeIn = useCallback(() => {
-
 			animationFade.current.classList.remove(classes.fadeIn);
-		// animationFade.current
-		// console.log(animationFade.current)
 	}, [animationFade])
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
 			const numeroAleatorio = Math.floor(Math.random() * 3);
 			setIndex(numeroAleatorio)
-			// animationFadeIn();
 			animationFade.current.classList.remove(classes.fadeIn);
 		}, 3000);
 	

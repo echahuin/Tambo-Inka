@@ -54,3 +54,39 @@
     top: 0;
     right: 0;
 }
+@media only screen and (max-width: 37.5rem){
+    .backgroundText{
+        width: 98.5%;
+        height: 98.5%;
+        background: var(--black-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    .ContentCardSlider{
+        height: 10rem;
+        width: 15rem;
+    }
+    .contentText{
+        padding: 2rem;
+    }
+    .contentText h1{
+        font-size: .5rem
+        /* font-family: var(--font-primary); */
+    }
+    .contentText p{
+        font-size: .5rem
+        /* font-family: var(--font-primary); */
+    }
+    .boxStyle1{
+        height: 7rem;
+        width: 11rem;
+        background-color: rgb(29, 31, 30);
+    }
+    .boxStyle2{
+        height: 7rem;
+        width: 11rem;
+        background-color: rgb(33, 33, 32);
+    }
+}
