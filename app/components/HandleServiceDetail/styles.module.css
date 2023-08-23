@@ -23,12 +23,29 @@
     z-index: -1;
 }
 .contButtons{
-    position: absolute;
+    position: relative;
     display: flex;
+    background-color: yellow !important;
     align-items: center;
+    width: 3rem;
 }
 @media only screen and (max-width: 37.5rem){
     .contentServiceDetail{
         flex-direction: column;
+    }
+    .text{
+        left: 0rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: -1rem;
+        z-index: -1;
+    }
+    .img {
+        right: 0rem;
+        background: red;
+        height: 16rem;
+        width: 100%;
     }
 }

@@ -72,12 +72,15 @@
         width: 2.5rem;
         top: 0;
         left: -150px;
+        border-radius: 2rem;
+
     }
     .buttonSiguiente{
         height: 2.5rem;
         width: 2.5rem;
         top: 0;
         left: 135px;
+        border-radius: 2rem;
     }
     .text{
         left: 0rem;

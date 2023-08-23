@@ -12,12 +12,12 @@ function HandleServiceDetail({indexRender, service, buttonAnterior: ButtonAnteri
                 <div className={classes.img}>
                     <CardSliderImg srcImage={`${service[indexRender].image}`}/>
                 </div>
-                <div className={classes.text}>
-                    <CardSliderService title={`${service[indexRender].title}`} paragraph={`${service[indexRender].paragraph}`}/>
-                </div>
                 <div className={classes.contButtons}>
                     <ButtonAnterior />
                     <ButtonSiguiente />
+                </div>
+                <div className={classes.text}>
+                    <CardSliderService title={`${service[indexRender].title}`} paragraph={`${service[indexRender].paragraph}`}/>
                 </div>
             </div>
         </>

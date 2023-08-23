@@ -20,8 +20,8 @@ function Menu() {
       <div>
         <Image
         src="/images/logo.png"
-        width={115}
-        height={105}
+        width={100}
+        height={90}
         alt="logo-tambo-inka"
         />
       </div>

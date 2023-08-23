@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <PrincipalSlider />
             <Services/>
-            <About/>
+            {/* <About/> */}
             <ServicesDetail/>
             {/* <ServicesDetail/> */}
 

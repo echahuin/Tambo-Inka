@@ -65,8 +65,8 @@
         z-index: 1;
     }
     .ContentCardSlider{
-        height: 10rem;
-        width: 15rem;
+        height: auto;
+        width: auto;
     }
     .contentText{
         padding: 2rem;
@@ -76,7 +76,8 @@
         /* font-family: var(--font-primary); */
     }
     .contentText p{
-        font-size: .5rem
+        font-size: var(--font-size-paragraph-mobile);
+        line-height: var(--font-height-paragraph-mobile);
         /* font-family: var(--font-primary); */
     }
     .boxStyle1{
