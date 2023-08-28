@@ -40,12 +40,13 @@
         justify-content: center;
         align-items: center;
         bottom: -1rem;
+        margin: .5rem;
         z-index: -1;
     }
     .img {
         right: 0rem;
-        background: red;
-        height: 16rem;
+        /* background: red; */
+        height: 21rem;
         width: 100%;
     }
 }

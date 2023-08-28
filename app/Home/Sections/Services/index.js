@@ -10,13 +10,15 @@ function Services() {
   return (<>
     {
       isMobile && (<>
-          <h1 className={classes.titleMb}>Servicios</h1>
+        <div className={classes.contServices}>
+        <h1 className={classes.titleMb}>Servicios</h1>
         <div className={classes.contCardServicesMb}>
           <div className={classes.CardServiceMb}>
             <CardService urlImg={'/images/hamburger.jpg'} subTitle={'ENTRADA'}/>
             <CardService urlImg={'/images/asparagus.jpg'} subTitle={'PRINCIPAL'}/>
             <CardService urlImg={'/images/dessert.jpg'} subTitle={'APERITIVOS'}/>
           </div>
+        </div>
         </div>
       </>
       )

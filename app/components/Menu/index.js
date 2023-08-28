@@ -17,7 +17,7 @@ function Menu() {
 
   return (
     <div className={classes.menu} >
-      <div>
+      <div className={classes.imgStyle}>
         <Image
         src="/images/logo.png"
         width={100}

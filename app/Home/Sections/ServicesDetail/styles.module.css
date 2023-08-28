@@ -62,22 +62,22 @@
     cursor: pointer;
 }
 @media only screen and (max-width: 37.5rem){
-    .img{
+    /* .img{
         left: 0;
         height: 5rem;
         width: 5rem;
-    }
+    } */
     .buttonAnterior{
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 3rem;
+        width: 3rem;
         top: 0;
         left: -150px;
         border-radius: 2rem;
 
     }
     .buttonSiguiente{
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 3rem;
+        width: 3rem;
         top: 0;
         left: 135px;
         border-radius: 2rem;
@@ -86,6 +86,6 @@
         left: 0rem;
         bottom: -2rem;
         z-index: -1;
-        background: red;
+        background: rgb(12, 232, 38);
     }
 }

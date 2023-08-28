@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+}s
 .CardService {
     display: flex;
 }
@@ -13,19 +13,31 @@
     font-size: var(--font-size-title-3);
     font-weight: var(--font-weight-extra-bold) !important;
     margin: 1.5rem;
-}
-.contCardServicesMb {
-    height: 70vh;
-    width: auto;
-    overflow-x: scroll;
-    background-color: red;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.contCardServicesMb {
+    height: 50vh;
+    width: auto;
+    overflow-x: scroll;
+    background-color: rgba(255, 255, 255, 0.205);
+    display: flex;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 .CardServiceMb{
     width: 56rem;
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
-    background: rgba(3, 65, 236, 0.801);
+    /* background: rgba(0, 0, 0, 0.8); */
+}
+.contServices {
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: var(--font-size-title-mobile);
+    font-weight: var(--font-weigsht-extra-bold) !important;
 }
