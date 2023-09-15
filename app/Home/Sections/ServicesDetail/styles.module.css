@@ -34,7 +34,7 @@
     border: 1px solid var(--primary-color);
     border-radius: .4rem;
     margin: 10px;
-    box-shadow: var(--cardShadowSmall);
+    /* box-shadow: var(--cardShadowSmall); */
     background-color: rgb(255, 255, 255);
     font-family: var(--primary-font);
     font-size: var(--font-size-small);
@@ -54,7 +54,7 @@
     border: 1px solid var(--primary-color);
     border-radius: .4rem;
     margin: 10px;
-    box-shadow: var(--cardShadowSmall);
+    /* box-shadow: var(--cardShadowSmall); */
     background-color: rgb(255, 255, 255);
     font-family: var(--primary-font);
     font-size: var(--font-size-small);
@@ -68,19 +68,26 @@
         width: 5rem;
     } */
     .buttonAnterior{
+        /* background-image: url("/images/buttonServiceDetail.svg"); */
+        /* transform: scale(1, -1); */
+        object-fit: contain;
         height: 3rem;
         width: 3rem;
         top: 0;
-        left: -150px;
-        border-radius: 2rem;
-
+        left: -160px;
+        /* border-radius: 2rem; */
+        border: 1px solid #e7ce1200;
+        
     }
     .buttonSiguiente{
+        transform: rotate(180deg);
         height: 3rem;
         width: 3rem;
         top: 0;
         left: 135px;
-        border-radius: 2rem;
+        /* border-radius: 2rem; */
+        border: 1px solid #e7ce1200;
+
     }
     .text{
         left: 0rem;

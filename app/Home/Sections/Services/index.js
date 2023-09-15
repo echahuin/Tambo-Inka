@@ -11,7 +11,7 @@ function Services() {
     {
       isMobile && (<>
         <div className={classes.contServices}>
-        <h1 className={classes.titleMb}>Servicios</h1>
+        {/* <h1 className={classes.titleMb}>Servicios</h1> */}
         <div className={classes.contCardServicesMb}>
           <div className={classes.CardServiceMb}>
             <CardService urlImg={'/images/hamburger.jpg'} subTitle={'ENTRADA'}/>

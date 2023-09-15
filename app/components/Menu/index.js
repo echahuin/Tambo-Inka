@@ -17,16 +17,24 @@ function Menu() {
 
   return (
     <div className={classes.menu} >
-      <div className={classes.imgStyle}>
+      {/* <div className={classes.imgStyle}>
         <Image
-        src="/images/logo.png"
+        src="/images/logo_1.svg"
         width={100}
         height={90}
         alt="logo-tambo-inka"
         />
-      </div>
+      </div> */}
       {
         isMobile && (<>
+         <div className={classes.imgStyle}>
+        <Image
+        src="/images/logo_1.svg"
+        width={55}
+        height={45}
+        alt="logo-tambo-inka"
+        />
+      </div>
         <div onClick={activeMenu} className={classnames(classes.logoMenu, {[classes.isActiveLogoMenu]: isActive })}>
           <div className={classnames(classes.indx, {[classes.isActiveIndx]: isActive })}></div>
           <div className={classnames(classes.indx, {[classes.isActiveIndx]: isActive })}></div>
@@ -43,6 +51,14 @@ function Menu() {
         </>
         )
       } {!isMobile && (<>
+       <div className={classes.imgStyle}>
+        <Image
+          src="/images/logo_1.svg"
+          width={100}
+          height={90}
+          alt="logo-tambo-inka"
+        />
+      </div>
        <div>
         <ul  className={classes.ul}>
           <li className={classes.li}>Servicios</li>

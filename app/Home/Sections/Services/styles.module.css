@@ -21,19 +21,20 @@
 .contCardServicesMb {
     height: 50vh;
     width: auto;
-    overflow-x: scroll;
     background-color: rgba(255, 255, 255, 0.205);
     display: flex;
     align-items: center;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    overflow-x: scroll;
 }
 .CardServiceMb{
+    padding-left: 5rem;
+    padding-right: 5rem;
     width: 56rem;
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
-    /* background: rgba(0, 0, 0, 0.8); */
 }
 .contServices {
     text-align: center;

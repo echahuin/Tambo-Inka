@@ -1,15 +1,13 @@
 .contImg{
-
-  /* .contenedor-imagen { */
     max-width: 100%;
-    /* width: 600px; Puedes ajustar el ancho máximo deseado aquí */
     margin: 0 auto;
-  /* } */
     position: relative;
     background-size: auto;
     height: 100vh;
     width: 100%;
     object-fit: cover;
+    /* opacity: .5; */
+    filter: brightness(0.5);
 }
 
 .slider {
@@ -19,6 +17,7 @@
   }
   
   .slider-item {
+    background-color: red;
     position: absolute;
     top: 0;
     left: 0;
@@ -27,17 +26,68 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
   }
+
+  .contText{
+    padding: 2.5rem;
+    position: absolute;
+    top: 20%;
+    /* bottom: 0; */
+  }
+  .contText h2 {
+    position: relative;
+    font-size: 14vw;
+    color: #c6b81600;
+    -webkit-text-stroke: 0.1vw #e98b3960;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contText h2::before
+{
+    content: attr(data-text);
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    color: #e98b39 !important;
+    -webkit-text-stroke: 0vw #213e53;
+    border-right: 2px solid #000000;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0%, 10%,100%{
+        width: 0;
+    }
+    70% , 90%{
+        width: 100%;
+    }
+}
   /* slideshow.module.css */
-@keyframes fadeInAnimation {
+/* @keyframes fadeInAnimation {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 /* Clase para aplicar la animación de fundido */
-.fadeI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              n {
+/* .fadeI                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              n {
   animation: fadeInAnimation 1s ease;
+} */
+
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

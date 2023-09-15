@@ -2,6 +2,9 @@
 import React, { useState, useMemo } from 'react'
 import classes from './styles.module.css'
 import HandleServiceDetail from '@/app/components/HandleServiceDetail'
+import BackgroundSlider from 'react-background-slider'
+
+import Image from 'next/image'
 
 function ServicesDetail() {
 
@@ -30,12 +33,14 @@ function ServicesDetail() {
     }
   ], []);
 
-  const ButtonSiguiente = () => <div className={classes.buttonAnterior} onClick={()=>{ indice === 0 ? setIndice(serviceData.length-1) :  setIndice(indice - 1) }}>{`<-`}</div>
-  const ButtonAnterior = () => <div className={classes.buttonSiguiente} onClick={()=>{ indice === serviceData.length-1 ? setIndice(0): setIndice(indice + 1) }}>{`->`}</div>
+  const ButtonSiguiente = () => <div className={classes.buttonAnterior} onClick={()=>{ indice === 0 ? setIndice(serviceData.length-1) :  setIndice(indice - 1) }}><Image src={"/images/buttonServiceDetail.svg"} fill={true} alt='buttonPrev' /></div>
+  const ButtonAnterior = () => <div className={classes.buttonSiguiente} onClick={()=>{ indice === serviceData.length-1 ? setIndice(0): setIndice(indice + 1) }}><Image src={"/images/buttonServiceDetail.svg"} fill={true} alt='buttonNext'/></div>
 
   return (
       <div className={classes.contentServiceDetail}>
         <HandleServiceDetail limitSlider={serviceData.length - 1} indexRender={indice} service={serviceData} buttonAnterior={ButtonAnterior} buttonSiguiente={ButtonSiguiente}/>
+        {/* <BackgroundSlider images={[serviceData[0].image, serviceData[1].image, serviceData[2].image]} 
+        duration={15} transition={2} /> */}
       </div>
   )
 }

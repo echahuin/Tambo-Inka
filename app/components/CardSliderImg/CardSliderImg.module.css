@@ -1,12 +1,28 @@
 .contentSliderImg{
     box-shadow: var(--cardShadowSmall);
     position: relative;
-    height: 25rem;
-    width: 35rem;
+    height: 18rem;
+    width: 20rem;
+    /* background-color: red; */
+    width: 100%;
+
+    /* > div {
+      position: unset !important;
+    } */
+  
+    /* .image {
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+    } */
 }
 @media only screen and (max-width: 37.5rem){
     .contentSliderImg{
-        height: 24rem;
-        width: 24rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: 18rem;
+        width: 20rem;
+
     }
 }
+
