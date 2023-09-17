@@ -1,0 +1,28 @@
+.footer{
+    height: auto;
+    background-color: rgb(224, 224, 224);
+    padding: 2rem;
+}
+
+.socialContact a{
+   margin: .5rem;
+}
+.infoContact {
+    display: flex;
+    align-items: center;
+}
+.infoContact p{
+    margin: .5rem;
+}
+.finFooter {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: .9rem;
+    /* height: 1rem; */
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 0 1rem;  
+}

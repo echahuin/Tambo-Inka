@@ -7,16 +7,15 @@ import useDevice from '@/app/Hooks/useDevice'
 function Services() {
   const { isMobile } = useDevice();
 
-  return (<>
+  return (<div id="servicios" >
     {
       isMobile && (<>
         <div className={classes.contServices}>
-        {/* <h1 className={classes.titleMb}>Servicios</h1> */}
         <div className={classes.contCardServicesMb}>
           <div className={classes.CardServiceMb}>
-            <CardService urlImg={'/images/hamburger.jpg'} subTitle={'ENTRADA'}/>
-            <CardService urlImg={'/images/asparagus.jpg'} subTitle={'PRINCIPAL'}/>
-            <CardService urlImg={'/images/dessert.jpg'} subTitle={'APERITIVOS'}/>
+            <CardService urlImg={'/images/hamburger.jpg'} subTitle={'Finger Food'} description={"'consiste en pequeñas porciones de alimentos que se pueden comer con las manos sin necesidad de cubiertos.'"}/>
+            <CardService urlImg={'/images/asparagus.jpg'} subTitle={'Plato principal'} description={'"El plato principal es el plato principal de una comida, que suele incluir proteínas y guarniciones."'} />
+            <CardService urlImg={'/images/dessert.jpg'} subTitle={'Postres'} description={'"El postre es un dulce o plato dulce que se sirve al final de una comida."'}/>
           </div>
         </div>
         </div>
@@ -28,14 +27,12 @@ function Services() {
         <div className={classes.contCardServices}>
          <h1 className={classes.title}>Servicios</h1>
          <div className={classes.CardService}>
-           <CardService urlImg={'/images/hamburger.jpg'} subTitle={'ENTRADA'}/>
-           {/* <CardService urlImg={'/images/asparagus.jpg'} subTitle={'PRINCIPAL'}/>
-           <CardService urlImg={'/images/dessert.jpg'} subTitle={'APERITIVOS'}/> */}
+           <CardService urlImg={'/images/hamburger.jpg'} subTitle={'Entrada'}/>
          </div>
        </div>
      ) 
     }
-    </>
+    </div>
   )
 }
 

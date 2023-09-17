@@ -3,7 +3,8 @@
     position: relative;
     height: 13rem;
     width: 20rem;
-    margin: .5rem;
+    margin: 1rem;
+    /* text-align: "center"; */
 }
 .textService {
     position: absolute;
@@ -13,6 +14,7 @@
     text-align: center;
     height: 13rem;
     width: 20rem;
+    /* background-color: rgb(113, 113, 113); */
 }
 
 .textService h2 {
@@ -23,7 +25,10 @@
     opacity: 1;
     margin: 0;
     cursor: default;
+    text-transform: uppercase;
+    transition: .5s;
 }
 .contImgService:hover > .imgService {
     filter: brightness(0.4);
+    transition: .5s;
 }

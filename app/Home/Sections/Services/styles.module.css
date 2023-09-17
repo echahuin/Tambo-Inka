@@ -28,6 +28,10 @@
     scroll-behavior: smooth;
     overflow-x: scroll;
 }
+.contCardServicesMb::-webkit-scrollbar {
+    display: none;
+  }
+  
 .CardServiceMb{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -35,6 +39,7 @@
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
+    scrollbar-color: yellow #640a64;
 }
 .contServices {
     text-align: center;

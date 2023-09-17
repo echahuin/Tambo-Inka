@@ -3,6 +3,7 @@ import React, {useRef, useState} from 'react'
 import classes from './menu.module.css'
 import Image from 'next/image'
 import classnames from 'classnames';
+import Link from 'next/link'
 import useDevice from '@/app/Hooks/useDevice'
 
 function Menu() {
@@ -17,14 +18,6 @@ function Menu() {
 
   return (
     <div className={classes.menu} >
-      {/* <div className={classes.imgStyle}>
-        <Image
-        src="/images/logo_1.svg"
-        width={100}
-        height={90}
-        alt="logo-tambo-inka"
-        />
-      </div> */}
       {
         isMobile && (<>
          <div className={classes.imgStyle}>
@@ -41,11 +34,10 @@ function Menu() {
           <div className={classnames(classes.indx, {[classes.isActiveIndx]: isActive })}></div>
         </div>
         <div ref={menuRef} className={classnames(classes.mobileMenu, { [classes.isActive]: isActive })}>
-          <ul className={classes.ulMobile}>
-            <li className={classes.liMobile}>Servicios</li>
-            <li className={classes.liMobile}>Galeria</li>
-            <li className={classes.liMobile}>Foro</li>
-            <li className={classes.liMobile}>Contacto</li>
+          <ul className={classes.ulMobile} onClick={()=>{setisActive(false)}} >
+            <Link style={{textDecoration: "none", color: "rgb(234, 131, 6)"}} href="/Home/#servicios" > <li className={classes.liMobile}>Servicios</li> </Link>
+            <Link style={{textDecoration: "none", color: "rgb(234, 131, 6)"}} href="/Home/#galeria" > <li className={classes.liMobile}>Galeria</li> </Link>
+            <Link style={{textDecoration: "none", color: "rgb(234, 131, 6)"}} href="/Home/#contacto" > <li className={classes.liMobile}>Contacto</li> </Link>
           </ul>
         </div>
         </>

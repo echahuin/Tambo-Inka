@@ -39,7 +39,7 @@
     color: #c6b81600;
     -webkit-text-stroke: 0.1vw #e98b3960;
     text-transform: uppercase;
-    text-align: center;
+    text-align: start;
 }
 
 .contText h2::before
@@ -52,7 +52,7 @@
     height: 100%;
     color: #e98b39 !important;
     -webkit-text-stroke: 0vw #213e53;
-    border-right: 2px solid #000000;
+    border-right: 2px solid #e98b3900;
     overflow: hidden;
     animation: animate 6s linear infinite;
 }

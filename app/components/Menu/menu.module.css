@@ -53,10 +53,27 @@
     .isActiveLogoMenu {
         
     }
+    .isActiveIndx:nth-child(1){
+        position : absolute;
+        top: 35px;
+        rotate: 45deg;
+        transition: .5s;
+    }
+    .isActiveIndx:nth-child(2){
+        display: none;
+        transition: .5s;
+    }
+    .isActiveIndx:nth-child(3){
+        position : absolute;
+
+        rotate: 135deg;
+        top: 35px;
+        transition: .5s;
+    }
     .indx{
         color: teal;
         height: .1rem;
-        width: 3rem;
+        width: 2.5rem;
         background:rgb(231, 121, 18);
         transition: .5s;
     }
@@ -78,6 +95,7 @@
         height: 100vh;
         width: 100%;
         background: rgb(0, 0, 0);
+        /* background: rgb(234, 131, 6); */
         transition: .5s;
         z-index: 100;
     }
@@ -96,6 +114,10 @@
         padding: 0;
         margin: 0;
     }
+
+    /* a:link, a:visited, a:active {
+        text-decoration:none;
+    } */
     .liMobile {
         font-family: var(--primary-font);
         font-size: 3.2rem;
