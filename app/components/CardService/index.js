@@ -26,10 +26,17 @@ function CardSlider({urlImg, subTitle, description}) {
             <Image  className={classes.imgService} src={`${urlImg}`} fill={true} alt={`service-`} />
             {show && 
             <div className={classes.textService}>
-                <h2 >{subTitle}</h2>
+                <h2 >{description}</h2>
             </div>}
         </div>
-        <div style={{position: "relative", margin: "0 1rem", borderBottom: " 1px rgb(113, 113, 113) solid",  color: "black", fontSize: ".8rem" }}>{description}</div>
+        <div style={{position: "relative", margin: "0 1rem", borderBottom: " 1px rgb(113, 113, 113) solid", fontSize: "1rem", fontWeight: "800", textAlign: "center", textTransform: "uppercase" }}>{subTitle}</div>
+        <div className={classes.listItem} >
+            <ul>
+                <li><strong>01.</strong> Causa Limeña </li>
+                <li><strong>02.</strong> Papa Rellena</li>
+                <li><strong>03.</strong> Hamburguesas</li>
+            </ul>
+        </div> 
     </div>
   )
 }

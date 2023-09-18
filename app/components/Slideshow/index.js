@@ -4,7 +4,7 @@ import Image from 'next/image'
 import classes from './slideshow.module.css'
 
 function Slideshow() {
-	const images=['/images/hamburger.jpg', '/images/food.jpg', '/images/dessert.jpg']
+	const images=['/images/original/vocaditos.jpg', '/images/original/roger.jpg', '/images/original/plato.jpg']
 	const [index, setIndex] = React.useState(0)
 	const animationFade = useRef(null)
 	

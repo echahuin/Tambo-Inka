@@ -19,11 +19,11 @@
 
 .textService h2 {
     font-family: var(--primary-font);
-    color: var(--white-color);
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-bold);
+    color: rgb(216, 216, 216);
+    font-size: .8rem;
+    font-weight: 400;
     opacity: 1;
-    margin: 0;
+    margin: .8rem;
     cursor: default;
     text-transform: uppercase;
     transition: .5s;
@@ -31,4 +31,18 @@
 .contImgService:hover > .imgService {
     filter: brightness(0.4);
     transition: .5s;
+}
+.listItem{
+    /* text-decoration: ; */
+    font-family: var(--primary-font);
+    font-size: var(--font-size-medium);
+    font-weight: 300;
+    /* font-stretch: narrower; */
+    cursor: pointer;
+    margin: 10px 16px;
+    transition: .5s;
+}
+.listItem ul li{
+    list-style: none;
+    padding: .3rem 0;
 }
