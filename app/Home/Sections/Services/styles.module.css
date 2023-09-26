@@ -42,6 +42,7 @@
     scrollbar-color: yellow #640a64;
 }
 .contServices {
+    padding: 5rem 0rem;
     text-align: center;
     font-family: var(--primary-font);
     font-size: var(--font-size-title-mobile);
