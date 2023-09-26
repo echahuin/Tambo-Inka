@@ -4,10 +4,10 @@ import classes from './menu.module.css'
 import Image from 'next/image'
 import classnames from 'classnames';
 import Link from 'next/link'
-import useDevice from '@/app/Hooks/useDevice'
+import classNames from 'classnames';
+
 
 function Menu({styleScrool}) {
-  const { isMobile } = useDevice()
   const [isActive, setisActive] = useState(false);
   const menuRef = useRef(null)
 
@@ -18,22 +18,8 @@ function Menu({styleScrool}) {
 
   return (
     <div style={styleScrool} className={classes.menu} >
-      {
-        isMobile && (<>
-         <div className={classes.imgStyle}>
-          <Image
-          src="/images/logo_1.svg"
-          width={55}
-          height={45}
-          alt="logo-tambo-inka"
-          />
-        </div>
-          <div onClick={activeMenu} className={classnames(classes.logoMenu, {[classes.isActiveLogoMenu]: isActive })}>
-            <div className={classnames(classes.indx, {[classes.isActiveIndx]: isActive })}></div>
-            <div className={classnames(classes.indx, {[classes.isActiveIndx]: isActive })}></div>
-            <div className={classnames(classes.indx, {[classes.isActiveIndx]: isActive })}></div>
-          </div>
-          <div ref={menuRef} className={classnames(classes.mobileMenu, { [classes.isActive]: isActive })}>
+      <>
+          <div ref={menuRef} className={classnames(classes.isActive, { [classes.mobileMenu]: isActive })}>
             <div style={{display: "flex", flexDirection: "column"}}>
               <div className={classes.mobileMenuTitle}>MENÚ</div>
               <ul className={classes.ulMobile} onClick={()=>{setisActive(false)}} >
@@ -49,26 +35,22 @@ function Menu({styleScrool}) {
               </ul>
             </div>
           </div>
-        </>
-        )
-      } {!isMobile && (<>
-       <div className={classes.imgStyle}>
-        <Image
+        <>
+        <div className={classes.imgStyle}>
+          <Image
           src="/images/logo_1.svg"
-          width={100}
-          height={90}
+          width={55}
+          height={45}
           alt="logo-tambo-inka"
-        />
-      </div>
-       <div>
-        <ul  className={classes.ul}>
-          <li className={classes.li}>Servicios</li>
-          <li className={classes.li}>Galeria</li>
-          <li className={classes.li}>Foro</li>
-          <li className={classes.li}>Contacto</li>
-        </ul>
+          />
         </div>
-      </>)}
+        <div onClick={activeMenu} className={classnames(classes.logoMenu, {[classes.isActiveLogoMenu]: isActive })}>
+          <div className={classnames(classes.isActiveIndx, {[classes.indx]: isActive })}></div>
+          <div className={classnames(classes.isActiveIndx, {[classes.indx]: isActive })}></div>
+          <div className={classnames(classes.isActiveIndx, {[classes.indx]: isActive })}></div>
+        </div>
+        </>
+      </>
       </div>
   )
 }
