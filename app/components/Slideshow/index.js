@@ -1,41 +1,43 @@
 "use client";
-import React, { useRef, useEffect, useCallback } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import classes from './slideshow.module.css'
+import Slider from 'react-slick';
 
-function Slideshow() {
-	const images=['/images/original/vocaditos.jpg', '/images/original/roger.jpg', '/images/original/plato.jpg']
-	const [index, setIndex] = React.useState(0)
-	const animationFade = useRef(null)
-	
-	// const animationFadeIn = useCallback(() => {
-	// 		animationFade.current.classNameList.remove(classes.fadeIn);
-	// }, [animationFade])
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-	useEffect(() => {
-		const intervalId = setInterval(() => {
-			const numeroAleatorio = Math.floor(Math.random() * 3);
-			animationFade.current.classList.add(classes.fadeIn);
-			console.log(animationFade.current.classList.add(classes.fadeIn), "data")
-			setIndex(numeroAleatorio)
-		}, 3000);
-	
-		return () => {
-		  clearInterval(intervalId); 
-		};
-	  }, []); 
-	
+const Slideshow = () => {
+  const settings = {
+    dots: true,
+	fade:true,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true, 
+    autoplaySpeed: 4000,
+	arrows: false,    
+};
 
   return (
-	<>
-		<div className={classes.contImg}>
-			<Image ref={animationFade} src={images[index]} alt={`imgSlider${index}`} fill={true}  style={{objectFit: 'cover'}} className={`${classes.fadeIn} ${index === 0 ? classes.active : ''}`}/>
-		</div>
-			<div className={classes.contText} >
-				<h2 data-text="Tambo Inka">Tambo Inka</h2>
-			</div>
-	</>
-  )
-}
+    <>
+      <Slider {...settings}>
+	  	<div className={classes.contImg}>
+		  <Image  src={'/images/original/vocaditos.jpg'} alt={`imgSlider1`} fill={true}  style={{objectFit: 'cover'}} />
+ 		</div>
+		 <div className={classes.contImg}>
+		  <Image  src={'/images/original/roger.jpg'} alt={`imgSlider2`} fill={true}  style={{objectFit: 'cover'}} />
+ 		</div>
+		 <div className={classes.contImg}>
+		  <Image  src={'/images/original/plato.jpg'} alt={`imgSlider3`} fill={true}  style={{objectFit: 'cover'}} />
+ 		</div>
+      </Slider>
+	  <div className={classes.contText} >
+ 			<h2 data-text="Tambo Inka">Tambo Inka</h2>
+ 		</div>
+    </>
+  );
+};
 
-export default Slideshow
+export default Slideshow;

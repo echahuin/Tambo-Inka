@@ -1,5 +1,5 @@
 "use client";
-import React, {useRef, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import classes from './menu.module.css'
 import Image from 'next/image'
 import classnames from 'classnames';
@@ -15,6 +15,9 @@ function Menu({styleScrool}) {
     !isActive ? setisActive(true) : setisActive(false)
   }
   
+  // useEffect(() => {
+  //   setisActive(false)
+  // }, [isActive])
 
   return (
     <div style={styleScrool} className={classes.menu} >

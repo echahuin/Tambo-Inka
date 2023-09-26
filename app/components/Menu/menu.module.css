@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #b9b5b210;
 }
 .li {
     font-family: var(--primary-font);
@@ -28,9 +29,9 @@
     font-weight: var(--font-weight-bold);
     cursor: pointer
 }
-.li:hover{
+/* .li:hover{
     color: #ffffff;
-}
+} */
     .menu {
         padding-left: 1.5rem;
         width: 100%;
@@ -85,17 +86,15 @@
     .isActive {
         position: absolute;
         opacity: 0;
-        animation: fadeOut 1s ease;
-        color: rgb(193, 193, 193);
-        position: absolute;
+        color: rgba(193, 193, 193, 0.974);
         left: 0;
         top: 0;
         padding-top: 15rem;
         padding-left: 5rem;
         height: 100vh;
         width: 100%;
-        background: rgba(0, 0, 0, 0.911);
-        /* animation: fadeIn 1s ease; */
+        background: rgb(0, 0, 0);
+        animation: fadeOut 1s ease;
     }
     .mobileMenu{
         opacity: 1;
@@ -110,7 +109,6 @@
         background: rgba(0, 0, 0, 0.911);
         animation: fadeIn 1s ease;
         z-index: 100;
-        /* display: none; */
     }
 
       @keyframes fadeIn {
