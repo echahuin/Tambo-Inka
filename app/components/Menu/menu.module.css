@@ -29,9 +29,6 @@
     font-weight: var(--font-weight-bold);
     cursor: pointer
 }
-/* .li:hover{
-    color: #ffffff;
-} */
     .menu {
         padding-left: 1.5rem;
         width: 100%;
@@ -93,10 +90,12 @@
         padding-left: 5rem;
         height: 100vh;
         width: 100%;
+        display: none;
         background: rgb(0, 0, 0);
         animation: fadeOut 1s ease;
     }
     .mobileMenu{
+      display: block;
         opacity: 1;
         color: rgb(193, 193, 193);
         position: absolute;
