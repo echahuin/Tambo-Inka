@@ -10,14 +10,9 @@ import classNames from 'classnames';
 function Menu({styleScrool}) {
   const [isActive, setisActive] = useState(false);
   const menuRef = useRef(null)
-
   const activeMenu = () => {
     !isActive ? setisActive(true) : setisActive(false)
   }
-  
-  // useEffect(() => {
-  //   setisActive(false)
-  // }, [isActive])
 
   return (
     <div style={styleScrool} className={classes.menu} >
@@ -27,13 +22,16 @@ function Menu({styleScrool}) {
               <div className={classes.mobileMenuTitle}>MENÚ</div>
               <ul className={classes.ulMobile} onClick={()=>{setisActive(false)}} >
                 <div className={classes.itemMobileMenu} style={{display: "flex", alignItems: "center"}}>
-                  <span style={{color: "#e98b39", paddingRight: "2rem", fontFamily: "'Roboto Condensed', sans-serif"}} >01.</span><Link style={{textDecoration: "none", color: "#e2e2e2"}} href="/Home/#servicios" > <li className={classes.liMobile}>Servicios</li> </Link>
+                  <span style={{color: "#e98b39", paddingRight: "2rem", fontFamily: "'Roboto Condensed', sans-serif"}} >01.</span><Link style={{textDecoration: "none", color: "#e2e2e2"}} href="/Home" > <li className={classes.liMobile}>Inicio</li> </Link>
                 </div>
                 <div className={classes.itemMobileMenu} style={{display: "flex", alignItems: "center"}}>
-                  <span style={{color: "#e98b39", paddingRight: "2rem", fontFamily: "'Roboto Condensed', sans-serif"}} >02.</span><Link style={{textDecoration: "none", color: "#e2e2e2"}} href="/Home/#galeria"> <li className={classes.liMobile}>Galeria</li> </Link>
+                  <span style={{color: "#e98b39", paddingRight: "2rem", fontFamily: "'Roboto Condensed', sans-serif"}} >02.</span><Link style={{textDecoration: "none", color: "#e2e2e2"}} href="/Home/#servicios" > <li className={classes.liMobile}>Servicios</li> </Link>
                 </div>
                 <div className={classes.itemMobileMenu} style={{display: "flex", alignItems: "center"}}>
-                  <span style={{color: "#e98b39", paddingRight: "2rem", fontFamily: "'Roboto Condensed', sans-serif"}} >03.</span><Link style={{textDecoration: "none", color: "#e2e2e2"}} href="/Home/#contacto" > <li className={classes.liMobile}>Contacto</li> </Link>
+                  <span style={{color: "#e98b39", paddingRight: "2rem", fontFamily: "'Roboto Condensed', sans-serif"}} >03.</span><Link style={{textDecoration: "none", color: "#e2e2e2"}} href="/Home/#galeria"> <li className={classes.liMobile}>Galeria</li> </Link>
+                </div>
+                <div className={classes.itemMobileMenu} style={{display: "flex", alignItems: "center"}}>
+                  <span style={{color: "#e98b39", paddingRight: "2rem", fontFamily: "'Roboto Condensed', sans-serif"}} >04.</span><Link style={{textDecoration: "none", color: "#e2e2e2"}} href="/Home/#contacto" > <li className={classes.liMobile}>Contacto</li> </Link>
                 </div>
               </ul>
             </div>
