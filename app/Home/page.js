@@ -15,7 +15,7 @@ export default function Home() {
             <PrincipalSlider />
             <Services />
             {/* <ServicesDetail /> */}
-            {/* <Galeria /> */}
+            <Galeria />
             <Map/>
             <Footer />
         </div>
