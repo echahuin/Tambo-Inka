@@ -10,7 +10,7 @@ export default function OnlyImage({params}) {
 
     return(
         <div className={classes.bodyItem}>
-          <div className={classes.menuBackground}></div>
+          {/* <div className={classes.menuBackground}></div> */}
             <Image className={classes.img} src={objData.img} height={550} width={400}   alt={`itemImg${id}`} />
             <div className={classes.contText}>
               <h1>{objData.title}</h1>
