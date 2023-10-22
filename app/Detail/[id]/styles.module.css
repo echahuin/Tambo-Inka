@@ -34,6 +34,7 @@
         padding-top: 12rem;
         flex-direction: column;
         align-items: center;
+        background: red;
     }
     .img{
         height: 25rem;
