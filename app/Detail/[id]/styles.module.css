@@ -34,7 +34,7 @@
         padding-top: 12rem;
         flex-direction: column;
         align-items: center;
-        background: red;
+        background: rgb(28, 51, 170);
     }
     .img{
         height: 25rem;
@@ -55,7 +55,7 @@
             align-items: center;
         }
         .img{
-            height: 25rem;
+            height: 20rem;
             width: 100%;
             max-width: 300px;
             /* min-width: 550px; */
