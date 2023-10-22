@@ -8,6 +8,8 @@ function CardSlider({urlImg, subTitle, description}) {
     const [show, doShow] = React.useState(false)
     const ShowText = useRef(null)
 
+    //pasar a un hook
+
     const functionShow = () => {
         ShowText.current.addEventListener('mouseover', function() {
             doShow(true)

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import CardService from '../../../components/CardService'
+import CardService from '../../components/CardService'
 import classes from './styles.module.css'
 import useDevice from '@/app/Hooks/useDevice'
 
@@ -8,8 +8,6 @@ function Services() {
   const { isMobile } = useDevice();
 
   return (<div id="servicios" >
-    {
-      isMobile && (<>
         <div className={classes.contServices}>
         <div className={classes.contCardServicesMb}>
           <div className={classes.CardServiceMb}>
@@ -19,19 +17,6 @@ function Services() {
           </div>
         </div>
         </div>
-      </>
-      )
-    }
-    {
-      !isMobile && (
-        <div className={classes.contCardServices}>
-         <h1 className={classes.title}>Servicios</h1>
-         <div className={classes.CardService}>
-           <CardService urlImg={'/images/hamburger.jpg'} subTitle={'Entrada'}/>
-         </div>
-       </div>
-     ) 
-    }
     </div>
   )
 }

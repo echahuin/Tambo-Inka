@@ -1,41 +1,33 @@
 @import '../../globals.css';
 
-@media only screen and (max-width: 37.5rem){
-.menu {
+.menuDesktop {
     background-color: #ffffff00;
-    height: 7rem;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 6rem;
     position: fixed;
     z-index: 5;
 }
-.ul {
-    padding-right : 10rem  !important;
-    list-style: none;
+.menuDesktop header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ulItem a:hover {
+  color: aqua;
+}
+
+@media only screen and (max-width: 37.5rem){
+  .menu {
+    background-color: #ffffff00;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #b9b5b210;
-}
-.li {
-    font-family: var(--primary-font);
-    font-size: var(--font-size-medium);
-    margin: 10px 16px;
-    font-weight: var(--font-weight-bold);
-    cursor: pointer
-}
-    .menu {
-        padding-left: 1.5rem;
-        width: 100%;
-        height: 4.5rem;
-    }
-    .imgStyle {
-        z-index: 200;
+    position: fixed;
+    padding-left: 1.5rem;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 5;
     }
     .logoMenu{
         height: 1.5rem;
@@ -97,8 +89,7 @@
     .mobileMenu{
       display: block;
         opacity: 1;
-        color: rgb(193, 193, 193);
-        position: absolute;
+        color: rgb(63, 63, 63);
         left: 0;
         top: 0;
         padding-top: 15rem;
@@ -131,6 +122,7 @@
     .ulMobile{
         list-style: none;
         padding: 0;
+        display: block;
         margin: 0;
         transition: .5s;
     }
@@ -177,7 +169,6 @@
 
       .fade {
         background: red;
-        /* Estilos para tu componente */
       }
 
 }

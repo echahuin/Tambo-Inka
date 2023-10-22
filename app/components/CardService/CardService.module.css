@@ -1,10 +1,9 @@
 .contImgService{
     box-shadow: var(--cardShadowSmall);
     position: relative;
-    height: 13rem;
-    width: 20rem;
-    margin: 1rem;
-    /* text-align: "center"; */
+    height: 16rem;
+    width: 23rem;
+    margin: 1.5rem;
 }
 .textService {
     position: absolute;
@@ -12,15 +11,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 13rem;
-    width: 20rem;
-    /* background-color: rgb(113, 113, 113); */
+    height: 16rem;
+    width: 23rem;
 }
 
 .textService h2 {
     font-family: var(--primary-font);
     color: rgb(216, 216, 216);
-    font-size: .8rem;
+    font-size: 1.2rem;
     font-weight: 400;
     opacity: 1;
     margin: .8rem;
@@ -33,11 +31,9 @@
     transition: .5s;
 }
 .listItem{
-    /* text-decoration: ; */
     font-family: var(--primary-font);
-    font-size: var(--font-size-medium);
+    font-size: 1.2rem;
     font-weight: 300;
-    /* font-stretch: narrower; */
     cursor: pointer;
     margin: 10px 16px;
     transition: .5s;
@@ -45,4 +41,85 @@
 .listItem ul li{
     list-style: none;
     padding: .3rem 0;
+}
+
+@media only screen and (max-width: 1300px) {
+    .contImgService{
+        box-shadow: var(--cardShadowSmall);
+        position: relative;
+        height: 12rem;
+        width: 17rem;
+        margin: .5rem;
+    }
+    .textService {
+        height: 12rem;
+        width: 17rem;
+  }
+  .textService h2 {
+    font-size: 1rem;
+    
+  }
+  .listItem{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 10px 16px;
+    transition: .5s;
+}
+}
+  
+
+/* @media only screen and (max-width: 60rem){
+    .textService{
+        height: 13rem;
+        width: 20rem;
+        margin: 1.2rem;
+    } */
+/* } */
+@media only screen and (max-width: 37.5rem){
+    .contImgService{
+        box-shadow: var(--cardShadowSmall);
+        position: relative;
+        height: 13rem;
+        width: 20rem;
+        margin: 1rem;
+    }
+    .textService {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 13rem;
+        width: 20rem;
+    }
+    
+    .textService h2 {
+        font-family: var(--primary-font);
+        color: rgb(216, 216, 216);
+        font-size: .8rem;
+        font-weight: 400;
+        opacity: 1;
+        margin: .8rem;
+        cursor: default;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+    .contImgService:hover > .imgService {
+        filter: brightness(0.4);
+        transition: .5s;
+    }
+    .listItem{
+        font-family: var(--primary-font);
+        font-size: var(--font-size-medium);
+        font-weight: 300;
+        cursor: pointer;
+        margin: 10px 16px;
+        transition: .5s;
+    }
+    .listItem ul li{
+        list-style: none;
+        padding: .3rem 0;
+    }
 }

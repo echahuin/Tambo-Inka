@@ -4,14 +4,18 @@
   @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Fredericka+the+Great&family=Inclusive+Sans&family=Julee&family=Roboto+Condensed:wght@300;400&display=swap');
 
 .custom-variables {
+
+  /*********************************************** MOBILE *************************************+*/
   --primary-color: #FFB90D;
   --second-color: #FFD700;
   --white-color: #ffffff;
   --black-color: #030303;
-  /* backgrounds */
+
+              /* backgrounds */
   --background-primary-color: #ff88004d;
   --background-primary-color-1: #ff88001a;
-  /* Fonts */
+  
+              /* Fonts */
   /* --primary-font:'Cabin Sketch', cursive; */
   --primary-font: 'Roboto Condensed', sans-serif;
   --font-size-medium: 1rem;
@@ -20,33 +24,59 @@
   --font-size-title: 2rem;
   --font-size-title-2: 2.5rem;
   --font-size-title-3: 3.5rem;
+
+                  /*weight*/
+
   --font-weight: 400;
   --font-weight-bold: 600;
   --font-weight-extra-bold: 800;
   --cardShadowSmall: 0 6px 12px -2px rgba(50,50,93,0.25),0 3px 7px -3px rgba(0,0,0,0.3);
-  /* Mobile variables */
   
-
-  /* size */
+                /* size */
   --font-size-title-mobile: 1.2rem;
   --font-size-paragraph-mobile: 1.4rem;
   --font-size-banner-mobile: 5rem;
-  /* line-height */
+  
+                /* line-height */
   --font-height-paragraph-mobile: 20px;
-
-
-  /*  font-family: 'Cabin Sketch', cursive;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Julee', cursive; */
 
 /* fonts: {
 
   font-family: 'Cabin Sketch', cursive;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Inclusive Sans', sans-serif;
-font-family: 'Julee', cursive;
-font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-family: 'Julee', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
 
 } */
+
+/*************************************************+ DESKTOP *******************************************/
+
+              /* Fonts */
+  /* --primary-font:'Cabin Sketch', cursive; */
+  --primary-font: 'Roboto Condensed', sans-serif;
+  --font-size-medium-d: 1.5rem;
+  --font-size-small-d: 1.3rem;
+  --font-size-large-d: 2rem;
+  --font-size-title-d: 2.5rem;
+  --font-size-title-2-d: 3rem;
+  --font-size-title-3-d: 4rem;
+  
+                /*weight*/
+
+  --font-weight-d: 400;
+  --font-weight-bold-d: 600;
+  --font-weight-extra-bold-d: 800;
+  
+
+  --cardShadowSmall: 0 6px 12px -2px rgba(50,50,93,0.25),0 3px 7px -3px rgba(0,0,0,0.3);
+  
+                /* size */
+  --font-size-title-mobile: 1.2rem;
+  --font-size-paragraph-mobile: 1.4rem;
+  --font-size-banner-mobile: 5rem;
+  
+                /* line-height */
+  --font-height-paragraph-mobile: 20px;
 
 }

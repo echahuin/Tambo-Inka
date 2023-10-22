@@ -6,19 +6,23 @@ import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import useDevice from '@/app/Hooks/useDevice';
 
 const Slideshow = () => {
+  
+  const { isMobile } =  useDevice();
+
   const settings = {
     dots: true,
-	fade:true,
+	  fade:true,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, 
     autoplaySpeed: 4000,
-	arrows: false,    
-};
+	  arrows: false,    
+  };
 
   return (
     <>
@@ -33,9 +37,9 @@ const Slideshow = () => {
 		  <Image  src={'/images/original/plato.jpg'} alt={`imgSlider3`} fill={true}  style={{objectFit: 'cover'}} />
  		</div>
       </Slider>
-	  <div className={classes.contText} >
- 			<h2 data-text="Tambo Inka">Tambo Inka</h2>
- 		</div>
+      <div className={classes.contText} >
+        { isMobile ? <h2 data-text="Tambo Inka">Tambo Inka</h2> : <h2 data-text="Tambo☼Inka">Tambo☼Inka</h2> } 
+      </div>
     </>
   );
 };
