@@ -1,0 +1,33 @@
+.bodyItem{
+    padding-top: 12rem;
+    /* height: 100vh; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+.img{
+    object-fit: cover;
+    /* padding: 0rem 2rem; */
+}
+.contText{
+    align-items: start;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+@media only screen and (max-width: 37.5rem){
+    .bodyItem{
+        flex-direction: column;
+    }
+    .img{
+        height: 22rem;
+        width: 100%;
+        object-fit: cover;
+        /* padding: 0rem 2rem 0rem 2rem; */
+    }
+}
