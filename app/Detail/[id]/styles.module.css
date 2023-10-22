@@ -39,7 +39,7 @@
     .img{
         height: 25rem;
         width: 100%;
-        max-width: 300px;
+        /* max-width: 300px; */
         /* min-width: 550px; */
         object-fit: cover;
         padding: 0rem
@@ -57,7 +57,7 @@
         .img{
             height: 20rem;
             width: 100%;
-            min-width: 300px;
+            /* min-width: 300px; */
             /* min-width: 550px; */
             object-fit: cover;
             padding: 0rem
