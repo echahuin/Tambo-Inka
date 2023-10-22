@@ -1,6 +1,5 @@
 .bodyItem{
     padding-top: 12rem;
-    /* height: 100vh; */
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -8,7 +7,9 @@
 }
 .img{
     object-fit: cover;
-    /* padding: 0rem 2rem; */
+    width: 50%;
+    min-width: 550px;
+    padding: 0rem 2rem;
 }
 .contText{
     align-items: start;
@@ -20,14 +21,16 @@
 }
 
 
-@media only screen and (max-width: 37.5rem){
+@media only screen and (max-width: 67rem){
     .bodyItem{
         flex-direction: column;
+        align-items: center;
     }
     .img{
         height: 22rem;
         width: 100%;
+        max-width: 600px;
         object-fit: cover;
-        /* padding: 0rem 2rem 0rem 2rem; */
+        padding: 0rem
     }
 }

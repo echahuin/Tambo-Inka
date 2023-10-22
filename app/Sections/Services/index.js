@@ -2,10 +2,8 @@
 import React from 'react'
 import CardService from '../../components/CardService'
 import classes from './styles.module.css'
-import useDevice from '@/app/Hooks/useDevice'
 
 function Services() {
-  const { isMobile } = useDevice();
 
   return (<div id="servicios" >
         <div className={classes.contServices}>

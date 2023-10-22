@@ -4,10 +4,8 @@ import classes from './menu.module.css'
 import Image from 'next/image'
 import classnames from 'classnames';
 import Link from 'next/link'
-import classNames from 'classnames';
 import MenuDesktop from './MenuDesktop'
 import useDevice from '@/app/Hooks/useDevice';
-import useScrolling from '@/app/Hooks/useScrolling';
 
 
 function Menu() {
@@ -16,12 +14,10 @@ function Menu() {
   const [isActive, setsActive] = useState(false);
   const menuRef = useRef(null)
 
-  // const { scrollDirection } = useScrolling();
-
   const activeMenu = () => {
     !isActive ? setsActive(true) : setsActive(false)
   }
-  const {  isDesktop } = useDevice()
+  const { isTablet} = useDevice()
   const [scrollDirection, setScrollDirection] = useState({background: "#ffffff00", transition: "all 0.5s ease-in-out", boxShadow: "none"});
 
   useEffect (() => {
@@ -42,7 +38,7 @@ function Menu() {
 
   return (
     <div>
-      {isDesktop ? <div className={classes.menuDesktop}>
+      {!isTablet ? <div className={classes.menuDesktop}>
         <MenuDesktop pages={pages} />
       </div> : 
       <div style={scrollDirection} className={classes.menu}>
