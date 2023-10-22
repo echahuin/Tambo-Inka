@@ -54,7 +54,16 @@
             flex-direction: column;
             align-items: center;
         }
+        .img{
+            height: 25rem;
+            width: 100%;
+            max-width: 300px;
+            /* min-width: 550px; */
+            object-fit: cover;
+            padding: 0rem
+        }
         .menuBackground{
             height: 4rem;
+            position: fixed;
         }
     }
