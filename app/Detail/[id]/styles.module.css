@@ -4,6 +4,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
 }
 .img{
     object-fit: cover;
@@ -31,10 +32,10 @@
 
 @media only screen and (max-width: 67rem){
     .bodyItem{
-        padding-top: 12rem;
+        /* padding-top: 12rem;
         flex-direction: column;
-        align-items: center;
-        background: rgb(28, 51, 170);
+        align-items: center; */
+        background: rgb(84, 222, 20);
     }
     .img{
         height: 25rem;
@@ -43,9 +44,6 @@
         /* min-width: 550px; */
         object-fit: cover;
         padding: 0rem
-    }
-    .menuBackground{
-        height: 7rem;
     }
 }
     @media only screen and (max-width: 900px){
