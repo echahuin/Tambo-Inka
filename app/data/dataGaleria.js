@@ -1,40 +1,40 @@
 
 const dataGaleria =[
     {
-      img: "/images/food.jpg",
+      img: "/images/slider1.jpeg",
       id: 0,
-      title: "Plato de comida one",
-      description: "0 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Enrollado de pollo relleno.",
+      description: "El enrollado de pollo relleno es una deliciosa preparación culinaria que combina pechugas de pollo rellenas con una variedad de ingredientes, enrolladas y cocinadas para crear un plato sabroso y atractivo visualmente."
     },
     {
-      img: "/images/original/plato.jpg",
+      img: "/images/slider2.jpeg",
       id: 1,
-      title: "Plato de comida one",
-      description: "1 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Pollo al horno acompañado de rocoto.",
+      description: "El 'pollo al horno acompañado de rocoto' es una receta deliciosa que combina la suculencia del pollo asado con el sabor picante y distintivo del rocoto, un tipo de chile peruano"
     },
     {
-      img: "/images/original/roger.jpg",
+      img: "/images/slider3.jpeg",
       id: 2,
-      title: "Plato de comida one",
-      description: "2 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Rack de cordero al horno con mandioca.",
+      description: "El 'rack de cordero al horno con mandioca' es un plato elegante y sabroso que combina la carne tierna y jugosa del rack de cordero con la textura y el sabor único de la mandioca "
     },
     {
-      img: "/images/asparagus.jpg",
+      img: "/images/slider4.jpeg",
       id: 3,
-      title: "Plato de comida one",
-      description: "2 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Pechito de cerdo braseado con salsa de aji amarillo.",
+      description: "El 'pechito de cerdo braseado con salsa de ají amarillo' es un plato sabroso y picante que combina la jugosidad del cerdo braseado con el característico sabor picante y ligeramente dulce del ají amarillo. "
     },
     {
-      img: "/images/hamburger.jpg",
+      img: "/images/slider5.jpeg",
       id: 4,
-      title: "Plato de comida one",
-      description: "4 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Vocaditos",
+      description: "Estos alimentos son especialmente populares en eventos y reuniones sociales, ya que son fáciles de comer y no requieren platos o utensilios adicionales. Los finger foods pueden variar desde bocadillos simples como papas fritas y alitas de pollo hasta aperitivos más elaborados como mini sándwiches, brochetas, empanadillas, bolitas de carne, rollitos de primavera, entre otros."
     },
     {
-      img: "/images/original/vocaditos.jpg",
+      img: "/images/slider6.jpeg",
       id: 5,
-      title: "Plato de comida one",
-      description: "5 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Causa de pollo, vegetales de atun.",
+      description: "La 'causa de pollo con vegetales de atún' es un platillo peruano delicioso y colorido que combina puré de papa amarilla, pollo desmenuzado y atún, junto con una variedad de vegetales y condimentos para crear un sabor único. "
     }
   ]
 

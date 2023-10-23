@@ -3,7 +3,7 @@ import React, {useEffect, useRef} from 'react'
 import Image from 'next/image'
 import classes from './CardService.module.css'
 
-function CardSlider({urlImg, subTitle, description}) {
+function CardSlider({urlImg, subTitle, description, listItem}) {
 
     const [show, doShow] = React.useState(false)
     const ShowText = useRef(null)
@@ -34,9 +34,9 @@ function CardSlider({urlImg, subTitle, description}) {
         <div style={{position: "relative", margin: "0 1rem", borderBottom: " 1px rgb(113, 113, 113) solid", fontSize: "1rem", fontWeight: "800", textAlign: "center", textTransform: "uppercase" }}>{subTitle}</div>
         <div className={classes.listItem} >
             <ul>
-                <li><strong>01.</strong> Causa Limeña </li>
-                <li><strong>02.</strong> Papa Rellena</li>
-                <li><strong>03.</strong> Hamburguesas</li>
+                <li><strong>01.</strong>{listItem[0]}</li>
+                <li><strong>02.</strong> {listItem[1]}</li>
+                <li><strong>03.</strong>{listItem[2]}</li>
             </ul>
         </div> 
     </div>

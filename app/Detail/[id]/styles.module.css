@@ -10,7 +10,9 @@
     object-fit: cover;
     width: 50%;
     /* min-width: 550px; */
-    padding: 0rem 2rem;
+    margin: 0rem 2rem;
+    box-shadow: var(--cardShadowSmall);
+    border-radius: 5px;
 }
 .contText{
     align-items: start;

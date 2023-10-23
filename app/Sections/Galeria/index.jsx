@@ -33,7 +33,7 @@ const ItemGaleria = ({itemData, indexData}) => {
       <Image className={classes.imgService} style={{objectFit: "cover", zIndex:"200" }} src={itemData.img} alt="" fill={true} />
       {!show &&
         <div className={classes.textService}>
-            <h2>hi how are you</h2>
+            <h2>{itemData.title}</h2>
         </div>}
           </div>
     </Link>
