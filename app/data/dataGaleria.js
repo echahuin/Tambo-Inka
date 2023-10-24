@@ -31,7 +31,7 @@ const dataGaleria =[
       description: "Estos alimentos son especialmente populares en eventos y reuniones sociales, ya que son fáciles de comer y no requieren platos o utensilios adicionales. Los finger foods pueden variar desde bocadillos simples como papas fritas y alitas de pollo hasta aperitivos más elaborados como mini sándwiches, brochetas, empanadillas, bolitas de carne, rollitos de primavera, entre otros."
     },
     {
-      img: "/images/slider6.jpeg",
+      img: "/images/slider6.jpg",
       id: 5,
       title: "Causa de pollo, vegetales de atun.",
       description: "La 'causa de pollo con vegetales de atún' es un platillo peruano delicioso y colorido que combina puré de papa amarilla, pollo desmenuzado y atún, junto con una variedad de vegetales y condimentos para crear un sabor único. "

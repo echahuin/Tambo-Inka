@@ -17,7 +17,7 @@ function Services() {
           <div className={classes.CardServiceMb}>
             <CardService urlImg={'/images/slider5.jpeg'} subTitle={'Finger Food'} description={"'consiste en pequeñas porciones de alimentos que se pueden comer con las manos sin necesidad de cubiertos.'"} listItem={listItemService.fingerFood}/>
             <CardService urlImg={'/images/slider4.jpeg'} subTitle={'Plato principal'} description={'"El plato principal suele incluir proteínas y guarniciones."'} listItem={listItemService.platoPrincipal}/>
-            <CardService urlImg={'/images/dessert.jpg'} subTitle={'Postres'} description={'"El postre es un dulce o plato dulce que se sirve al final de una comida."'} listItem={listItemService.Postres}/>
+            <CardService urlImg={'/images/slider9.jpeg'} subTitle={'Postres'} description={'"El postre es un dulce o plato dulce que se sirve al final de una comida."'} listItem={listItemService.Postres}/>
           </div>
         </div>
         </div>
