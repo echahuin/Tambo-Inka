@@ -34,7 +34,7 @@
         width: 5rem;
         padding-right: 2.5rem;
         display: flex;
-        align-items: end;
+        align-items: flex-end;
         justify-content: space-between;
         flex-direction: column;
         z-index: 200;
@@ -146,7 +146,7 @@
     }
     .itemMobileMenu {
         display: "flex";
-        align-items: "start";
+        align-items: "flex-start";
         flex-direction: row;
     }
     .fade-enter {
