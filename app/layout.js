@@ -16,11 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body style={{padding: '0', margin: '0'}} class="custom-variables" className={inter.className}>
-       
-          <Menu/>
-    
-       {children}
-       <Link href={"https://api.whatsapp.com/send/?phone=5491125599997&text&type=phone_number&app_absent=0"} style={{position: "fixed", bottom: "0", right: "0", margin: "1rem"}}>
+        <Menu/>
+          {children}
+        <Link href={"https://api.whatsapp.com/send/?phone=5491125599997&text&type=phone_number&app_absent=0"} style={{position: "fixed", bottom: "0", right: "0", margin: "1rem"}}>
           <Image alt="linkWhatsApp" src={"/images/social/whatsappLogo.png"} height={55} width={55} style={{boxShadow: "var(--cardShadowSmall)",  borderRadius: "100px",}}/>
         </Link>
       </body>

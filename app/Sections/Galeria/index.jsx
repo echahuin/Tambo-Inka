@@ -4,9 +4,11 @@ import classes from './styleGaleria.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import dataGaleria from '../../data/dataGaleria'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
-const ItemGaleria = ({itemData, indexData}) => {
+const ItemGaleria = ({itemData, indexData, animation}) => {
 
   const [show, doShow] = useState(false)
   const ShowText = useRef(null)
@@ -22,11 +24,12 @@ const ItemGaleria = ({itemData, indexData}) => {
       });
   }
   useEffect(() => {
+    Aos.init({ duration: 1000 });
       functionShow()
   },[])
 
   return (
-    <div ref={ShowText}>
+    <div data-aos={animation} ref={ShowText}>
     <Link  href={`/Detail/${itemData.id}`}>
       <div   className={classes.child}>
 
@@ -41,14 +44,14 @@ const ItemGaleria = ({itemData, indexData}) => {
   )
 }
 
-function Galeria() {
+function Galeria({animation}) {
 
   return (
     <div id="galeria" className={classes.contGaleria} >
       {
         dataGaleria.map((item, index) => {
           return(
-            <ItemGaleria key={index} itemData={item} indexData={index} />
+            <ItemGaleria key={index} itemData={item} indexData={index} animation={animation} />
           )
         })
       }
