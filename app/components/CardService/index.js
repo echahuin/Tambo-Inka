@@ -24,7 +24,7 @@ function CardSlider({urlImg, subTitle, description, listItem}) {
 
   return (
     <div style={{textAlign: "start" }}>
-        <div ref={ShowText} className={classes.contImgService}>
+        <div onClick={()=>{doShow(!show)}} ref={ShowText} className={classes.contImgService}>
             <Image  className={classes.imgService} src={`${urlImg}`} fill={true} alt={`service-`} />
             {show && 
             <div className={classes.textService}>

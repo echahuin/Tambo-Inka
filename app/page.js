@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <div>
       <PrincipalSlider />
-      <Services animation="fade-up"  />
-      <Galeria  animation="fade-up" />
+      <Services />
+      <Galeria animation="fade-up" />
       <Map animation="fade-up" />
       <Footer />
         

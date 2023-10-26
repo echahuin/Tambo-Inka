@@ -5,7 +5,7 @@ import classes from './styles.module.css'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-function Services({animation}) {
+function Services() {
 
   useEffect(() => {
     Aos.init({duration: 1000});
@@ -22,8 +22,8 @@ function Services({animation}) {
         <div className={classes.contCardServicesMb}>
           <div className={classes.CardServiceMb}>
             <div data-aos="fade-up"
-                  data-aos-delay="0"
-                  data-aos-duration="1000"  >
+                data-aos-delay="0"
+                data-aos-duration="1000"  >
               <CardService  urlImg={'/images/slider5.jpeg'} subTitle={'Finger Food'} description={"'consiste en pequeñas porciones de alimentos que se pueden comer con las manos sin necesidad de cubiertos.'"} listItem={listItemService.fingerFood}/>
             </div>
             <div data-aos="fade-up"
