@@ -22,10 +22,6 @@ export default function Home() {
       <Galeria animation="fade-up" />
       <Map animation="fade-up" />
       <Footer />
-      
-      {/* <video  autoplay="true" src="/videos/video.mp4" /> */}
-
-        
     </div>
   )
 }
