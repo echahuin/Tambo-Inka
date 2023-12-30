@@ -3,7 +3,7 @@
     font-family: var(--primary-font);
     height: auto;
     background-color: rgb(224, 224, 224);
-    padding: 2rem;
+    padding: 2rem 15rem;
 }
 .footer p{
     font-weight: 300;
@@ -33,4 +33,18 @@
 .map {
     height: 5rem;
     width: 5rem;
+}
+@media screen and (max-width: 900px){
+    .footer{
+    /* background: red; */
+        padding: 2rem 1rem;
+    }
+    .finFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+    .map {
+        margin: 1rem 0;
+    }
+    
 }

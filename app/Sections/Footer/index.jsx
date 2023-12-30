@@ -7,8 +7,6 @@ import Link from 'next/link'
 function index() {
   return (
     <div id="contacto" >
-      {/* <div className={classes.map}>
-      </div> */}
       <div className={classes.footer}>
         <h2>Contáctanos</h2>
         <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos.</p>
