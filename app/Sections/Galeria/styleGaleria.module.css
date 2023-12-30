@@ -10,6 +10,7 @@
     justify-content: center;
 }
 .child{
+    background: red;
     position: relative;
     margin: .5rem;
     height: 20rem;
@@ -44,6 +45,7 @@
     .child{
         /* position: relative; */
         margin: .2rem;
+        margin-top: 2rem;
         height: 15rem;
         width: 20rem;
         /* filter: brightness(1); */
