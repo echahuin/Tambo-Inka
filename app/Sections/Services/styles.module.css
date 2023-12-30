@@ -7,7 +7,8 @@
     text-align: center;
     font-family: var(--primary-font);
     font-size: var(--font-size-title-mobile-d);
-    font-weight: var(--font-weigsht-extra-bold) !important;
+    /* background:rgb(193, 6, 68); */
+    font-weight: var(--font-weight-extra-bold) !important;
 }
 .contCardServicesMb {
     height: 50vh;
@@ -17,14 +18,14 @@
     align-items: center;
     justify-content: center;
 }
-  
+       
 .CardServiceMb{
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
-    scrollbar-color: yellow #640a64;
+    scrollbar-color: yellow
 }
 .title {
     font-family: var(--primary-font);

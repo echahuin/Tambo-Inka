@@ -36,7 +36,6 @@ function CardSlider({urlImg, subTitle, description, listItem}) {
             <ul>
                 <li><strong>01.</strong>{listItem[0]}</li>
                 <li><strong>02.</strong> {listItem[1]}</li>
-                <li><strong>03.</strong>{listItem[2]}</li>
             </ul>
         </div> 
     </div>

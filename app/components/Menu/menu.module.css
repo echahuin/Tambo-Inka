@@ -13,10 +13,6 @@
   justify-content: center;
 }
 
-.ulItem a:hover {
-  color: aqua;
-}
-
 @media only screen and (max-width: 57rem){
   .menu {
     background-color: #ffffff00;

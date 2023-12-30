@@ -27,11 +27,12 @@ const Slideshow = () => {
   return (
     <>
       <Slider {...settings}>
+      
 	  	<div className={classes.contImg}>
 		  <Image  src={'/images/original/vocaditos.jpg'} alt={`imgSlider1`} fill={true}  style={{objectFit: 'cover'}} />
  		</div>
 		 <div className={classes.contImg}>
-		  <Image  src={'/images/original/roger.jpg'} alt={`imgSlider2`} fill={true}  style={{objectFit: 'cover'}} />
+		  <Image  src={'/images/original/royer.png'} alt={`imgSlider2`} fill={true}  style={{objectFit: 'cover'}} />
  		</div>
 		 <div className={classes.contImg}>
 		  <Image  src={'/images/original/plato.jpg'} alt={`imgSlider3`} fill={true}  style={{objectFit: 'cover'}} />

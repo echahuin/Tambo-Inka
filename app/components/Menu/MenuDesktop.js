@@ -9,28 +9,28 @@ import Link from 'next/link';
 import classes from './menu.module.css'
 
 
-function ResponsiveAppBar({styleScroll, pages }) {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+function ResponsiveAppBar({ pages }) {
+  const [ setAnchorElNav] = React.useState(null);
   const ref = useRef();
 
 
   // Pasar esto a un hook
   const [scrollDirection, setScrollDirection] = useState({background: "#ffffff00", transition: "all 0.5s ease-in-out", boxShadow: "none"});
-   const [isHovered, setIsHovered] = useState(false);
+  //  const [ setIsHovered] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovered(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovered(false);
+  // };
 
   useEffect(() => {
     ref.current.focus();
     const handleScroll = () => {
       if (window.scrollY > 150) {
-        setScrollDirection({background: "#000000ac", transition: "all 0.5s ease-in-out", boxShadow: "var(--cardShadowSmall)"});
+        setScrollDirection({background: "#000000", transition: "all 0.5s ease-in-out", boxShadow: "var(--cardShadowSmall)"});
       } else {
         setScrollDirection({background: "#ffffff00", transition: "all 0.5s ease-in-out", boxShadow: "none"});
       }
@@ -61,7 +61,6 @@ function ResponsiveAppBar({styleScroll, pages }) {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent:"flex-end" } }}>
             <ul className={classes.ulItem}>
               {pages.map((page, index) => (
-                // <li  key={index} style={{textDecoration: "none", listStyle: "none"}}  >
                     <Link
                     key={index}
                     ref={ref}
@@ -71,7 +70,6 @@ function ResponsiveAppBar({styleScroll, pages }) {
                     >
                       {page}
                   </Link>
-                // </li>
               ))}
             </ul>
           </Box>
